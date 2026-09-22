@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS agent;
+
+CREATE TABLE agent (
+  username VARCHAR(100) NOT NULL,
+  password VARCHAR(100) NOT NULL
+);
