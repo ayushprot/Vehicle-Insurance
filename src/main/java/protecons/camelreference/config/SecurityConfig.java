@@ -50,6 +50,7 @@ public class SecurityConfig {
                         // Swagger/OpenAPI
                         .requestMatchers(
                                 "/swagger-ui/**",
+                                "/swagger-ui.html",
                                 "/v3/api-docs/**"
                         )
                         .permitAll()

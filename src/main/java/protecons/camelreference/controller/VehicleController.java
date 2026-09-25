@@ -1,7 +1,7 @@
 package protecons.camelreference.controller;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.http.HttpStatus;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import protecons.camelreference.dto.vehicles.VehicleResponse;
@@ -11,6 +11,7 @@ import protecons.camelreference.repository.VehicleRepository;
 
 @RestController
 @RequestMapping("/api")
+@SecurityRequirement(name = "Bearer Authentication")
 public class VehicleController {
     private final VehicleRepository vehicleRepository;
 
